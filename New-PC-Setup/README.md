@@ -15,5 +15,5 @@ set execution policy and install chocolatey:
 `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 # Manual TODO:
-# - Make Chrome default browser, sign-in and import bookmarks
-# - Enable remote connections
+- Make Chrome default browser, sign-in and import bookmarks
+- Enable remote connections
