@@ -19,6 +19,7 @@ Run setup.cmd as Administrator.
 
 ### Dev Utils
 - [Git](https://git-scm.com/downloads)
+- [Git - Large File Storage](https://git-lfs.github.com/)
 - [Putty](https://www.putty.org/)
 - [Python 3](https://www.python.org/downloads/)
 - [VS Code](https://code.visualstudio.com/)

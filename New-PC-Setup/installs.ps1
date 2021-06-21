@@ -12,6 +12,7 @@ choco install -y obsidian
 
 # Dev
 choco install -y git
+choco install -y git-lfs
 choco install -y putty
 choco install -y python
 choco install -y vcredist140
