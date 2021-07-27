@@ -32,7 +32,7 @@ Run setup.cmd as Administrator.
 
 ### Jetbrains Products
 - [JB Toolbox](https://www.jetbrains.com/toolbox-app/)
-- [JB Pycharm Professional(https://www.jetbrains.com/pycharm/)
+- [JB Pycharm Professional](https://www.jetbrains.com/pycharm/)
 - [JB CLion](https://www.jetbrains.com/clion/)
 - [JB IntelliJ Ultimate](https://www.jetbrains.com/idea/)
 
