@@ -4,6 +4,18 @@ PowerShell script to setup a new Windows computer with my commonly used tools an
 
 Run setup.cmd as Administrator.
 
+## Prerequisites
+
+* ExecutionPolicy set to Bypass
+* Run in administrative cli
+* Chocolatey installed
+
+To install Chocolatey from cmd:
+
+```console
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+
 ## Installs
 
 - [Google Chrome](https://www.google.com.au/intl/en_au/chrome/)
@@ -15,47 +27,57 @@ Run setup.cmd as Administrator.
 - [Discord](https://discord.com/download)
 - [Steam](https://store.steampowered.com/about/)
 - [Notion](https://www.notion.so/product)
-
-### Other
+- [Paint.Net](https://www.getpaint.net/)
+- [qBittorrent](https://www.qbittorrent.org/)
+- [Greenshot](https://getgreenshot.org/)
 - [PNG Gauntlet](https://pnggauntlet.com/)
-- [Slack](https://slack.com/intl/en-au/)
 
 ### Dev Utils
 - [Git](https://git-scm.com/downloads)
 - [Git - Large File Storage](https://git-lfs.github.com/)
-- [Putty](https://www.putty.org/)
+- [Putty Portable](https://www.putty.org/)
+- [WinSCP Portable](https://winscp.net/eng/index.php)
 - [Python 3](https://www.python.org/downloads/)
 - [VS Code](https://code.visualstudio.com/)
 - [Git Kraken](https://www.gitkraken.com/)
-- Microsoft Visual C++ Redistributables from 2015-2019
-- VS Community 2017
+- [NodeJS](https://nodejs.org/en/)
+- [Golang](https://go.dev/)
+- [Yarn](https://yarnpkg.com/)
+- [cURL](https://curl.se/)
 
 ### Jetbrains Products
 - [JB Toolbox](https://www.jetbrains.com/toolbox-app/)
 - [JB Pycharm Professional](https://www.jetbrains.com/pycharm/)
 - [JB CLion](https://www.jetbrains.com/clion/)
-- [JB IntelliJ Ultimate](https://www.jetbrains.com/idea/)
 
-### CLI Utils
-- Sudo
-- Nano
-- Vim
-- Pip
+### Gaming
+- [Steam](https://store.steampowered.com/)
+- [Battle.net](https://us.shop.battle.net/en-us)
 
-<br />
+### Other
+- [GPU-Z](https://www.techpowerup.com/gpuz/)
+- [CPU-Z](https://www.techpowerup.com/download/cpu-z/)
+- [MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
+- [Sys Internals](https://learn.microsoft.com/en-us/sysinternals/)
+- [Speccy](https://www.ccleaner.com/speccy)
 
-## Prerequisites
+These will only install if an appropriate device is installed in the system.
+- [Geforce Experience](https://www.nvidia.com/en-au/geforce/geforce-experience/)
+- [AMD Ryzen Chipset](https://www.amd.com/en/products/chipsets-motherboards-desktop)
+- [Intel XTU & Intel DSA](https://www.intel.com/content/www/us/en/download/17881/intel-extreme-tuning-utility-intel-xtu.html)
+- [NZXT Cam](https://nzxt.com/en-AU/software/cam)
 
-* ExecutionPolicy set to Bypass
-* run in administrative cli
-* chocolatey installed
+### System Tweaks
+- Sticky Keys turned OFF
+- Display is switched to Extend Screen
+- Disable all USB devices power saving
+- Disable all network adapters power saving
+- Prompt for enabling remote-desktop
+- Prompt for reboot
 
-set execution policy and install chocolatey:
-
-`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 <br />
 
 # Manual TODO:
-- Make Chrome default browser, sign-in and import bookmarks
-- Enable remote connections
+- Make Firefox default browser, sign-in and import bookmarks
+- Edit startup applications using Autoruns (SysInternals)
