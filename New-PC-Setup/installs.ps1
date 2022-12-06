@@ -20,13 +20,14 @@ choco install -y git
 choco install -y git-lfs
 choco install -y putty.portable
 choco install -y winscp.portable
+choco install -y visualstudiocode
 choco install -y python
 choco install -y vcredist140
 choco install -y gitkraken
 choco install -y nodejs
 choco install -y yarn
 choco install -y golang
-choco install -y visualstudiocode
+choco install -y rust
 
 # Jetbrains Products
 choco install -y jetbrainstoolbox
@@ -78,10 +79,10 @@ function disableUsbHubPowerSaving {
 }
 
 # Functions
-function disableNetAdapterPowerSaving { 
+function disableNetAdapterPowerSaving {
   $PhysicalAdapters = Get-WmiObject -Class Win32_NetworkAdapter | Where-Object { $_.PNPDeviceID -notlike "ROOT\*" `
-      -and $_.Manufacturer -ne "Microsoft" -and $_.ConfigManagerErrorCode -eq 0 -and $_.ConfigManagerErrorCode -ne 22 } 
-	
+      -and $_.Manufacturer -ne "Microsoft" -and $_.ConfigManagerErrorCode -eq 0 -and $_.ConfigManagerErrorCode -ne 22 }
+
   foreach ($PhysicalAdapter in $PhysicalAdapters) {
     $PhysicalAdapterName = $PhysicalAdapter.Name
     $DeviceID = $PhysicalAdapter.DeviceID
@@ -91,7 +92,7 @@ function disableNetAdapterPowerSaving {
     else {
       $AdapterDeviceNumber = "00" + $DeviceID
     }
-		
+
     $KeyPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\$AdapterDeviceNumber"
     if (Test-Path -Path $KeyPath) {
       $PnPCapabilitiesValue = (Get-ItemProperty -Path $KeyPath).PnPCapabilities
@@ -99,7 +100,7 @@ function disableNetAdapterPowerSaving {
         write-host ""$PhysicalAdapterName" power saving feature already disabled!" -foregroundcolor "green"
       }
       if ($PnPCapabilitiesValue -eq 0) {
-        try {	
+        try {
           #setting the value of properties of PnPCapabilites to 24, it will disable save power option.
           Set-ItemProperty -Path $KeyPath -Name "PnPCapabilities" -Value 24 | Out-Null
           write-host ""$PhysicalAdapterName" power saving feature disabled!" -foregroundcolor "green"
