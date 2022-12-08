@@ -28,6 +28,7 @@ choco install -y nodejs
 choco install -y yarn
 choco install -y golang
 choco install -y rust
+choco install -y msys2
 
 # Jetbrains Products
 choco install -y jetbrainstoolbox
@@ -41,6 +42,9 @@ choco install -y battle.net
 
 # CLI
 choco install -y curl
+
+# Powershell / MS Store Installs
+winget install -e --id Microsoft.WindowsTerminal
 
 # Drivers / PNP Devices / System & Overclocking
 $pnp = Get-PnpDevice | Select-Object 'FriendlyName'
