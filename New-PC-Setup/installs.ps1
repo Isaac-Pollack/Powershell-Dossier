@@ -33,6 +33,7 @@ choco install -y msys2
 # Jetbrains Products
 choco install -y jetbrainstoolbox
 choco install -y pycharm # Pro edition
+choco install -y datagrip
 
 #3D Printing
 choco install -y cura-new

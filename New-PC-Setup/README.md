@@ -53,6 +53,7 @@ To install Chocolatey from cmd:
 
 * [JB Toolbox](https://www.jetbrains.com/toolbox-app/)
 * [JB Pycharm Professional](https://www.jetbrains.com/pycharm/)
+* [JB DataGrip](https://www.jetbrains.com/datagrip/)
 
 ### 3D Printing
 
