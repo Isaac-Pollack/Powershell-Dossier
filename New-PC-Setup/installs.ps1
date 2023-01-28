@@ -32,8 +32,10 @@ choco install -y msys2
 
 # Jetbrains Products
 choco install -y jetbrainstoolbox
-choco install -y pycharm # Professional edition
-choco install -y clion-ide
+choco install -y pycharm # Pro edition
+
+#3D Printing
+choco install -y cura-new
 
 # Gaming
 choco install -y steam-client

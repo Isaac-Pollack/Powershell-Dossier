@@ -35,7 +35,6 @@ To install Chocolatey from cmd:
 ### Dev Utils
 
 * [Git](https://git-scm.com/downloads)
-
 * [Git - Large File Storage](https://git-lfs.github.com/)
 * [Putty Portable](https://www.putty.org/)
 * [WinSCP Portable](https://winscp.net/eng/index.php)
@@ -53,20 +52,20 @@ To install Chocolatey from cmd:
 ### Jetbrains Products
 
 * [JB Toolbox](https://www.jetbrains.com/toolbox-app/)
-
 * [JB Pycharm Professional](https://www.jetbrains.com/pycharm/)
-* [JB CLion](https://www.jetbrains.com/clion/)
+
+### 3D Printing
+
+* [Cura](https://ultimaker.com/software/ultimaker-cura)
 
 ### Gaming
 
 * [Steam](https://store.steampowered.com/)
-
 * [Battle.net](https://us.shop.battle.net/en-us)
 
 ### Other
 
 * [GPU-Z](https://www.techpowerup.com/gpuz/)
-
 * [CPU-Z](https://www.techpowerup.com/download/cpu-z/)
 * [MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
 * [Sys Internals](https://learn.microsoft.com/en-us/sysinternals/)
@@ -82,7 +81,6 @@ These will only install if an appropriate device is installed in the system.
 ### System Tweaks
 
 * Sticky Keys turned OFF
-
 * Display is switched to Extend Screen
 * Disable all USB devices power saving
 * Disable all network adapters power saving
@@ -94,9 +92,7 @@ These will only install if an appropriate device is installed in the system.
 ## Manual TODO
 
 * Make Firefox default browser, sign-in and import bookmarks
-
 * Edit startup applications using Autoruns (SysInternals)
-
 * Run MSYS2 Terminal and run the following command:
 
 ```console
