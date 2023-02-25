@@ -35,9 +35,6 @@ choco install -y jetbrainstoolbox
 choco install -y pycharm # Pro edition
 choco install -y datagrip
 
-#3D Printing
-choco install -y cura-new
-
 # Gaming
 choco install -y steam-client
 choco install -y battle.net

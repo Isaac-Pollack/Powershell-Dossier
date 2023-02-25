@@ -55,10 +55,6 @@ To install Chocolatey from cmd:
 * [JB Pycharm Professional](https://www.jetbrains.com/pycharm/)
 * [JB DataGrip](https://www.jetbrains.com/datagrip/)
 
-### 3D Printing
-
-* [Cura](https://ultimaker.com/software/ultimaker-cura)
-
 ### Gaming
 
 * [Steam](https://store.steampowered.com/)
@@ -93,6 +89,7 @@ These will only install if an appropriate device is installed in the system.
 ## Manual TODO
 
 * Make Firefox default browser, sign-in and import bookmarks
+* Install [Bambu Slicer](https://bambulab.com/en/download)
 * Edit startup applications using Autoruns (SysInternals)
 * Run MSYS2 Terminal and run the following command:
 
