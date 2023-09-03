@@ -88,8 +88,8 @@ These will only install if an appropriate device is installed in the system.
 
 ## Manual TODO
 
-* Make Firefox default browser, sign-in and import bookmarks
-* Install [Bambu Slicer](https://bambulab.com/en/download)
+* Make Firefox Dev default browser, sign-in and import bookmarks
+* Install [Orca Slicer]([https://bambulab.com/en/download](https://github.com/SoftFever/OrcaSlicer/releases))
 * Edit startup applications using Autoruns (SysInternals)
 * Run MSYS2 Terminal and run the following command:
 
@@ -98,3 +98,4 @@ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 ```
 
 * [Setup MSYS2 Terminal in Windows Terminal](https://www.msys2.org/docs/terminals/)
+* [Remember when launching MSYS2 Terminal or attempting to compile](https://www.msys2.org/docs/environments/)
